@@ -1,0 +1,16 @@
+# Render Blueprint — деплой Proofy (API + фронтенд, один веб-сервис)
+# Документация: https://docs.render.com/blueprint-spec
+# Сервер без внешних зависимостей (node:http + node:crypto) — сборка не нужна.
+# PORT и NODE_ENV подставляются Render автоматически.
+services:
+  - type: web
+    name: proofy
+    runtime: node
+    plan: free
+    repo: https://github.com/o1Vega/proofy.git
+    branch: main
+    rootDir: server
+    buildCommand: ""
+    startCommand: node server.js
+    healthCheckPath: /v1/health
+    autoDeploy: true
