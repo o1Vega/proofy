@@ -1,0 +1,14 @@
+{
+  "name": "proofy-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proofy — бэкенд прототипа: REST API /v1, ECDSA P-256, JSON-хранилище (локальный аналог PostgreSQL из BACKEND.md). Без внешних зависимостей.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js && node test.strict.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

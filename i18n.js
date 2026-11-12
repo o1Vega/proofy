@@ -427,7 +427,7 @@ const DICT_ROWS = [
   ['согласие', 'келісім', 'consent', 'onay', '授权'],
   ['открытый ключ', 'ашық кілт', 'public key', 'açık anahtar', '公钥'],
   ['Любой может проверить подпись сертификата этим ключом, даже без нашего сервера.', 'Кез келген адам сертификат қолтаңбасын осы кілтпен біздің серверсіз де тексере алады.', 'Anyone can verify a certificate signature with this key, even without our server.', 'Herkes bu anahtarla imzayı sunucumuz olmadan da doğrulayabilir.', '任何人都可以用此公钥验证证书签名，无需我们的服务器。'],
-  ['Адрес api.proofy.kz — пример для рабочей версии. В прототипе запросы обрабатываются в браузере.', 'api.proofy.kz мекенжайы — жұмыс нұсқасына мысал. Прототипте сұраулар браузерде өңделеді.', 'api.proofy.kz is an example for production. In the prototype, requests run in the browser.', 'api.proofy.kz canlı sürüm için örnektir. Prototipte istekler tarayıcıda işlenir.', 'api.proofy.kz 为正式版示例地址，原型中的请求在浏览器内处理。'],
+  ['Адрес api.proofy.kz — пример для рабочей версии. Локальный сервер: node server/server.js → http://localhost:4173.', 'api.proofy.kz мекенжайы — жұмыс нұсқасына мысал. Жергілікті сервер: node server/server.js → http://localhost:4173.', 'api.proofy.kz is an example for production. Local server: node server/server.js → http://localhost:4173.', 'api.proofy.kz canlı sürüm için örnektir. Yerel sunucu: node server/server.js → http://localhost:4173.', 'api.proofy.kz 为正式版示例地址。本地服务器：node server/server.js → http://localhost:4173。'],
   ['Распечатайте три карточки. Жюри сканирует QR своим телефоном и видит три разных исхода.', 'Үш карточканы басып шығарыңыз. Қазылар QR-ды телефонымен сканерлеп, үш түрлі нәтижені көреді.', 'Print three cards. The jury scans each QR with their own phone and sees three outcomes.', 'Üç kartı yazdırın. Jüri QR’ları kendi telefonuyla tarar ve üç sonucu görür.', '打印三张卡片，评委用自己的手机扫码，看到三种结果。'],
   ['настоящий', 'шынайы', 'real', 'gerçek', '真实'],
   ['Подправлен', 'Түзетілген', 'Altered', 'Değiştirilmiş', '已篡改'],
@@ -550,6 +550,10 @@ const DICT_ROWS = [
   ['СОШ №2', '№2 ЖББМ', 'School No. 2', '2 No’lu Okul', '第二中学'],
   ['СОШ №5', '№5 ЖББМ', 'School No. 5', '5 No’lu Okul', '第五中学'],
   ['СОШ №1', '№1 ЖББМ', 'School No. 1', '1 No’lu Okul', '第一中学'],
+  // Режим API (страница API)
+  ['Сервер запущен — запросы идут на живой API:', 'Сервер іске қосылды — сұраулар тірі API-ға барады:', 'Server is running — requests go to the live API:', 'Sunucu çalışıyor — istekler canlı API’ye gidiyor:', '服务器已启动 — 请求发送到实时 API：'],
+  ['Сервер не найден — прототип работает офлайн, данные в localStorage. Запуск:', 'Сервер табылмады — прототип офлайн: деректер localStorage-та. Іске қосу:', 'Server not found — prototype runs offline, data in localStorage. Start:', 'Sunucu bulunamadı — prototip çevrimdışı, veriler localStorage’da. Başlat:', '未找到服务器 — 原型离线运行，数据在 localStorage 中。启动：'],
+  ['API имитируется в браузере, данные в localStorage. Запустите: node server/server.js', 'API браузерде имитацияланады, деректер localStorage-та. Іске қосыңыз: node server/server.js', 'API is emulated in the browser, data in localStorage. Start: node server/server.js', 'API tarayıcıda taklit edilir, veriler localStorage’da. Başlatın: node server/server.js', 'API 在浏览器内模拟，数据在 localStorage 中。启动：node server/server.js'],
 ];
 
 /* Транслитерация имён и городов для латиницы и китайского интерфейса */

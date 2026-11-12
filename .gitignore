@@ -1,1 +1,18 @@
+# Архивы сборки
 proofy-*.zip
+
+# Локальная БД бэкенда (сид-данные создаются автоматически)
+server/data/
+
+# Node.js
+node_modules/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# OS / редакторы
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

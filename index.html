@@ -9,11 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=1794488774">
-  <link rel="stylesheet" href="sections.css?v=1794488774">
-  <link rel="stylesheet" href="ux.css?v=1794488774">
-  <link rel="stylesheet" href="glass.css?v=1794488774">
-  <link rel="stylesheet" href="sell.css?v=1794488774">
+  <link rel="stylesheet" href="styles.css?v=1794489000">
+  <link rel="stylesheet" href="sections.css?v=1794489000">
+  <link rel="stylesheet" href="ux.css?v=1794489000">
+  <link rel="stylesheet" href="glass.css?v=1794489000">
+  <link rel="stylesheet" href="sell.css?v=1794489000">
 </head>
 <body class="intro-on">
   <!-- Интро -->
@@ -50,13 +50,13 @@
       <nav class="nav" id="nav">
         <a href="#/verify" data-nav="verify">Проверка</a>
         <a href="#/ranking" data-nav="ranking">Рейтинг</a>
-        <a href="#/org" data-nav="org">Организаторам</a>
-        <a href="#/student" data-nav="student">Школьникам</a>
-        <a href="#/buyer" data-nav="buyer">Вузам</a>
+        <a href="#/hackathons" data-nav="ranking">Хакатоны</a>
         <a href="#/api" data-nav="api">API</a>
+        <a href="#/login" id="navAuth" data-auth-link><svg viewBox="0 0 24 24" style="width:14px;height:14px;vertical-align:-2px;margin-right:4px"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg><span>Войти</span></a>
       </nav>
       <div class="top-actions">
         <a href="#/api" class="api-pill" id="apiPill" title="Состояние API"><i></i><span id="apiMs">API · онлайн</span></a>
+        <button class="link-btn small" id="btnLogout" data-act="logout" hidden>Выйти</button>
         <a href="#/register" class="reg-btn" id="regBtn"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span>Регистрация</span></a>
         <div class="lang" id="langBox">
           <button class="lang-btn" data-act="langToggle" title="Язык" aria-haspopup="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><b data-lang-current>RU</b></button>
@@ -87,8 +87,7 @@
     <a href="#/" data-nav="home"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg><span>Главная</span></a>
     <a href="#/verify" data-nav="verify"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span>Проверка</span></a>
     <a href="#/ranking" data-nav="ranking"><svg viewBox="0 0 24 24"><path d="M6 20V10M12 20V4M18 20v-7"/></svg><span>Рейтинг</span></a>
-    <a href="#/student" data-nav="student"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span>Школьник</span></a>
-    <a href="#/buyer" data-nav="buyer"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg><span>Вузы</span></a>
+    <a href="#/login" id="navAuthM" data-auth-link><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg><span>Войти</span></a>
   </nav>
 
   <a class="sticky-cta" id="stickyCta" href="#/verify"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span>Проверить сертификат</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -101,7 +100,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
-  <script src="i18n.js?v=1794488774"></script>
-  <script src="app.js?v=1794488774"></script>
+  <script src="i18n.js?v=1794489000"></script>
+  <script src="app.js?v=1794489000"></script>
 </body>
 </html>
